@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yash Thorat - Full Stack Developer & AI Enthusiast Portfolio">
+    <meta name="keywords" content="Full Stack Developer, Web Developer, AI Enthusiast, Portfolio, Yash Thorat">
+    <meta name="author" content="Yash Thorat">
+    <title>Yash Thorat | Full Stack Developer & AI Enthusiast</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/themes.css">
+    
+    <!-- Google Fonts (safe CDN) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 (Local fallback included in CSS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-text">YASH THORAT</div>
+    </div>
+</div>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress">
+    <div class="progress-bar"></div>
+</div>
+
+<!-- Theme Switcher Dropdown -->
+<div class="theme-switcher">
+    <button class="theme-toggle-btn" id="themeToggleBtn">
+        <span style="font-size:20px;">🎨</span>
+    </button>
+    <div class="theme-menu" id="themeMenu">
+        <h4>Select Theme</h4>
+        <div class="theme-options">
+            <button class="theme-option" data-theme="gold">✨ Gold + Black</button>
+            <button class="theme-option" data-theme="blue">💙 Blue + Black</button>
+            <button class="theme-option" data-theme="purple">💜 Purple + Black</button>
+            <button class="theme-option" data-theme="emerald">💚 Emerald + Black</button>
+            <button class="theme-option" data-theme="red">❤️ Red + Black</button>
+        </div>
+        <div class="dark-light-toggle">
+            <button id="darkLightToggle">
+                <span>🌙</span>
+                <span>Dark/Light</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Floating Social Icons -->
+<div class="floating-socials">
+    <a href="https://github.com/codewithyash-ui" target="_blank" class="social-float">
+        <span>🐙</span>
+        <span>GitHub</span>
+    </a>
+    <a href="#" class="social-float linkedin-placeholder">
+        <span>🔗</span>
+        <span>LinkedIn</span>
+    </a>
+    <a href="#" class="social-float instagram-placeholder">
+        <span>📷</span>
+        <span>Instagram</span>
+    </a>
+</div>
+
+<!-- Sticky Navbar -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <h2>YT<span>.</span></h2>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#ai-journey" class="nav-link">AI Journey</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span>☰</span>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Welcome to my portfolio</span>
+            </div>
+            <h1 class="hero-name">YASH THORAT</h1>
+            <p class="hero-tagline">Designing and Developing the Future of the Web</p>
+            <div class="hero-typing">
+                <span class="typing-text"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    📁 View Projects
+                </a>
+                <a href="#" class="btn btn-secondary" id="downloadResumeBtn">
+                    📄 Download Resume
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    ✉️ Contact Me
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-wrapper">
+                <img src="assets/images/profile.jpg" alt="Yash Thorat" class="profile-img">
+                <div class="profile-glow"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-image">
+                <div class="about-img-wrapper">
+                    <img src="assets/images/about.jpg" alt="Yash Thorat">
+                </div>
+            </div>
+            <div class="about-content">
+                <p class="about-text">
+                    Hi, I'm Yash Thorat, a passionate Full-Stack Web Developer, AI Enthusiast, and BCA Student with a strong interest in building modern, responsive, and intelligent digital experiences.
+                </p>
+                <p class="about-text">
+                    I enjoy transforming ideas into powerful web applications by combining clean code, creative design, and innovative technologies.
+                </p>
+                <p class="about-text">
+                    My expertise spans both frontend and backend development, allowing me to create complete web solutions from concept to deployment.
+                </p>
+                <p class="about-text">
+                    Alongside web development, I am actively exploring Artificial Intelligence, AI-powered applications, and modern technologies that enhance user experiences and solve real-world problems.
+                </p>
+                <p class="about-text">
+                    I am passionate about continuous learning and staying updated with the latest trends in Web Development, Software Development, UI/UX Design, and AI Technologies.
+                </p>
+                <p class="about-text highlight">
+                    My goal is to build impactful digital products that are visually appealing, highly functional, and powered by smart technology.
+                </p>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span>📧</span>
+                        <span>thoratyash021@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span>📍</span>
+                        <span>Jalgaon, Maharashtra, India</span>
+                    </div>
+                    <div class="info-item">
+                        <span>📞</span>
+                        <span>Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Counters Section -->
+<section class="counters">
+    <div class="container">
+        <div class="counters-grid">
+            <div class="counter-card">
+                <div class="counter-icon">💻</div>
+                <div class="counter-number" data-count="15">0</div>
+                <div class="counter-label">Projects Completed</div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-icon">⚙️</div>
+                <div class="counter-number" data-count="12">0</div>
+                <div class="counter-label">Technologies Learned</div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-icon">🐙</div>
+                <div class="counter-number" data-count="500">0</div>
+                <div class="counter-label">GitHub Contributions</div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-icon">⏰</div>
+                <div class="counter-number" data-count="1000">0</div>
+                <div class="counter-label">Learning Hours</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>🎨 Frontend</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML5</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>CSS3</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>React.js</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Responsive Design</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="92"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>🖥️ Backend</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Node.js</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Express.js</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>REST APIs</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>🗄️ Database</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MongoDB</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MS SQL</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>📝 Programming</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="60"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>C++</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>🛠️ Tools</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Git</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>GitHub</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>VS Code</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Netlify</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 - Fashion Store -->
+            <div class="project-card" data-category="ecommerce">
+                <div class="project-image">
+                    <img src="assets/images/project1.jpg" alt="Fashion Store E-Commerce Website"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="project-image-fallback" style="display:none; background:linear-gradient(135deg,#1a1a1a,#2a2a2a); height:100%; align-items:center; justify-content:center; flex-direction:column;">
+                        <span style="font-size:48px;">👕</span>
+                        <p style="color:#FFD700; margin-top:10px;">Fashion Store</p>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://codewithyash-ui.github.io/fashion-store/" target="_blank" class="project-link">🔗</a>
+                            <a href="https://github.com/codewithyash-ui" target="_blank" class="project-link">🐙</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Fashion Store E-Commerce Website</h3>
+                    <p>A modern and fully responsive fashion e-commerce website featuring 50+ products, shopping cart, wishlist functionality, admin dashboard, and 5 customizable color themes.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React.js</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://codewithyash-ui.github.io/fashion-store/" target="_blank" class="btn-small btn-live">🔗 Live Demo</a>
+                        <a href="https://github.com/codewithyash-ui" target="_blank" class="btn-small btn-github">🐙 GitHub</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 - Luxury Perfume -->
+            <div class="project-card" data-category="ecommerce">
+                <div class="project-image">
+                    <img src="assets/images/project2.jpg" alt="Luxury Perfume Shop Website"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="project-image-fallback" style="display:none; background:linear-gradient(135deg,#1a1a1a,#2a2a2a); height:100%; align-items:center; justify-content:center; flex-direction:column;">
+                        <span style="font-size:48px;">🧴</span>
+                        <p style="color:#FFD700; margin-top:10px;">Perfume Store</p>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://codewithyash-ui.github.io/PERFUME_WEB/" target="_blank" class="project-link">🔗</a>
+                            <a href="https://github.com/codewithyash-ui" target="_blank" class="project-link">🐙</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Luxury Perfume Shop Website</h3>
+                    <p>A premium luxury perfume e-commerce website featuring a modern glassmorphism design, 11 beautifully crafted pages, shopping cart, wishlist system, and admin dashboard.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Glassmorphism</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://codewithyash-ui.github.io/PERFUME_WEB/" target="_blank" class="btn-small btn-live">🔗 Live Demo</a>
+                        <a href="https://github.com/codewithyash-ui" target="_blank" class="btn-small btn-github">🐙 GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Timeline Section -->
+<section id="education" class="education">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Education <span>Timeline</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025 - Present</div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <h4>KCE'S IMR Institute of Management and Research</h4>
+                    <p>Jalgaon, Maharashtra, India</p>
+                    <div class="timeline-badge">🎓 Current Year: Third Year</div>
+                    <div class="timeline-badge expected">📅 Expected Graduation: 2027</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI Journey Section -->
+<section id="ai-journey" class="ai-journey">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">AI <span>Journey</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="ai-container">
+            <div class="ai-card">
+                <div class="ai-icon">🧠</div>
+                <h3>AI Enthusiasm</h3>
+                <p>Passionate about Artificial Intelligence and its potential to transform industries and solve real-world problems.</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-icon">📚</div>
+                <h3>AI Learning Path</h3>
+                <p>Currently exploring Machine Learning, Deep Learning, and AI-powered application development to build intelligent systems.</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-icon">🤖</div>
+                <h3>AI-Powered Applications</h3>
+                <p>Building web applications that leverage AI capabilities for enhanced user experiences and automation.</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-icon">💡</div>
+                <h3>Innovation Mindset</h3>
+                <p>Combining creativity with technical expertise to develop innovative solutions that push boundaries.</p>
+            </div>
+            <div class="ai-card">
+                <div class="ai-icon">📈</div>
+                <h3>Future Goals</h3>
+                <p>Aspiring to become an AI/ML Engineer and contribute to cutting-edge AI research and development.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>thoratyash021@gmail.com</p>
+                    <a href="mailto:thoratyash021@gmail.com">Send Message →</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Jalgaon, Maharashtra, India</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">✈️ Send Message</button>
+                    <p id="formStatus" class="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>YASH THORAT</h2>
+                <p>Designing and Developing the Future of the Web</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/codewithyash-ui" target="_blank">🐙</a>
+                    <a href="#" class="linkedin-placeholder">🔗</a>
+                    <a href="#" class="instagram-placeholder">📷</a>
+                    <a href="mailto:thoratyash021@gmail.com">📧</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Yash Thorat. All Rights Reserved.</p>
+            <button id="backToTop" class="back-to-top">↑</button>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript Files -->
+<script src="js/theme-switcher.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Popup for Coming Soon -->
+<div id="comingSoonPopup" class="popup">
+    <div class="popup-content">
+        <span class="popup-close">×</span>
+        <div style="font-size:48px;">⏰</div>
+        <h3>Coming Soon!</h3>
+        <p>LinkedIn, Instagram, and Resume download will be available soon. Stay tuned!</p>
+    </div>
+</div>
+
+</body>
+</html>
